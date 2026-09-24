@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Browser Objects & Browser Features</title>
+<title>JavaScript Events</title>
 
 <style>
 
@@ -22,7 +22,7 @@ html{
 }
 
 body{
-    background:#f4f7fb;
+    background:#f5f7fb;
     color:#172033;
 }
 
@@ -45,17 +45,17 @@ header{
     background:
     linear-gradient(
         135deg,
-        #0f766e,
-        #0891b2,
-        #2563eb,
-        #4f46e5
+        #9a3412,
+        #ea580c,
+        #db2777,
+        #7e22ce
     );
 
     color:white;
 }
 
 .hero h1{
-    font-size:50px;
+    font-size:55px;
     margin-bottom:15px;
 }
 
@@ -110,7 +110,7 @@ nav a{
 
     border-radius:10px;
 
-    background:#0f766e;
+    background:#c2410c;
 
     font-weight:bold;
 
@@ -118,7 +118,7 @@ nav a{
 }
 
 nav a:hover{
-    background:#06b6d4;
+    background:#db2777;
 
     transform:translateY(-3px);
 }
@@ -148,11 +148,11 @@ nav a:hover{
 }
 
 .title h2{
-    font-size:34px;
+    font-size:35px;
 
     margin-bottom:10px;
 
-    color:#0f172a;
+    color:#1e293b;
 }
 
 .title p{
@@ -216,9 +216,9 @@ nav a:hover{
     background:
     linear-gradient(
         90deg,
-        #0f766e,
-        #0891b2,
-        #2563eb
+        #ea580c,
+        #db2777,
+        #7e22ce
     );
 }
 
@@ -250,8 +250,8 @@ nav a:hover{
     background:
     linear-gradient(
         135deg,
-        #0f766e,
-        #2563eb
+        #ea580c,
+        #db2777
     );
 
     color:white;
@@ -274,7 +274,7 @@ nav a:hover{
 
     margin-bottom:12px;
 
-    color:#0f172a;
+    color:#1e293b;
 
     line-height:1.4;
 }
@@ -292,7 +292,7 @@ nav a:hover{
 
 
 /* =========================
-   BUTTON
+   OPEN BUTTON
 ========================= */
 
 .open-btn{
@@ -305,7 +305,7 @@ nav a:hover{
 
     border-radius:10px;
 
-    background:#0f766e;
+    background:#c2410c;
 
     color:white;
 
@@ -318,7 +318,7 @@ nav a:hover{
 
 .open-btn:hover{
 
-    background:#2563eb;
+    background:#db2777;
 
     transform:scale(1.05);
 }
@@ -346,7 +346,7 @@ footer p{
 }
 
 footer strong{
-    color:#67e8f9;
+    color:#f9a8d4;
 }
 
 
@@ -357,7 +357,7 @@ footer strong{
 @media(max-width:600px){
 
     .hero h1{
-        font-size:35px;
+        font-size:40px;
     }
 
     .hero p{
@@ -366,7 +366,6 @@ footer strong{
 
     nav a{
         margin:3px;
-
         font-size:13px;
     }
 
@@ -397,15 +396,15 @@ footer strong{
     <div class="hero">
 
         <h1>
-            Browser Objects & Browser Features
+            JavaScript Events
         </h1>
 
         <p>
-            Explore JavaScript Browser APIs & Features
+            Explore Mouse, Keyboard, Form & Interactive Events
         </p>
 
         <span class="program-count">
-            🌐 20 Programs
+            ⚡ 30 Programs
         </span>
 
     </div>
@@ -440,7 +439,7 @@ footer strong{
     <div class="title">
 
         <h2>
-            Browser Programs
+            JavaScript Event Programs
         </h2>
 
         <p>
@@ -459,20 +458,16 @@ footer strong{
 
             <div class="number">01</div>
 
-            <h3>
-                Window Object
-            </h3>
+            <h3>onclick Event</h3>
 
             <p>
-                Demonstrate the JavaScript Window object.
+                Demonstrate the onclick event using JavaScript.
             </p>
 
             <a
-                href="browser-01-window.html"
+                href="event-01-onclick.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -484,20 +479,16 @@ footer strong{
 
             <div class="number">02</div>
 
-            <h3>
-                alert confirm prompt
-            </h3>
+            <h3>ondblclick Event</h3>
 
             <p>
-                Demonstrate alert, confirm and prompt methods.
+                Demonstrate the double-click event.
             </p>
 
             <a
-                href="browser-02-alert-confirm-prompt.html"
+                href="event-02-ondblclick.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -509,20 +500,16 @@ footer strong{
 
             <div class="number">03</div>
 
-            <h3>
-                setTimeout
-            </h3>
+            <h3>mouseover and mouseout</h3>
 
             <p>
-                Demonstrate delayed execution using setTimeout.
+                Demonstrate mouseover and mouseout events.
             </p>
 
             <a
-                href="browser-03-settimeout.html"
+                href="event-03-mouseover-out.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -534,20 +521,16 @@ footer strong{
 
             <div class="number">04</div>
 
-            <h3>
-                setInterval
-            </h3>
+            <h3>mousedown and mouseup</h3>
 
             <p>
-                Demonstrate repeated execution using setInterval.
+                Demonstrate mouse button press and release events.
             </p>
 
             <a
-                href="browser-04-setinterval.html"
+                href="event-04-mousedown-up.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -559,20 +542,16 @@ footer strong{
 
             <div class="number">05</div>
 
-            <h3>
-                Digital Clock using setInterval
-            </h3>
+            <h3>mousemove Event</h3>
 
             <p>
-                Create a digital clock using setInterval.
+                Demonstrate the mousemove event.
             </p>
 
             <a
-                href="browser-05-digital-clock.html"
+                href="event-05-mousemove.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -584,20 +563,16 @@ footer strong{
 
             <div class="number">06</div>
 
-            <h3>
-                Countdown Timer
-            </h3>
+            <h3>keydown Event</h3>
 
             <p>
-                Create a countdown timer using JavaScript.
+                Detect keyboard key presses using keydown.
             </p>
 
             <a
-                href="browser-06-countdown.html"
+                href="event-06-keydown.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -609,20 +584,16 @@ footer strong{
 
             <div class="number">07</div>
 
-            <h3>
-                Stopwatch
-            </h3>
+            <h3>keyup Event</h3>
 
             <p>
-                Create a stopwatch using JavaScript.
+                Detect keyboard release using keyup.
             </p>
 
             <a
-                href="browser-07-stopwatch.html"
+                href="event-07-keyup.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -634,20 +605,16 @@ footer strong{
 
             <div class="number">08</div>
 
-            <h3>
-                Location Object
-            </h3>
+            <h3>Display Key Pressed</h3>
 
             <p>
-                Demonstrate the browser Location object.
+                Display the key pressed by the user.
             </p>
 
             <a
-                href="browser-08-location.html"
+                href="event-08-key-pressed.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -659,20 +626,16 @@ footer strong{
 
             <div class="number">09</div>
 
-            <h3>
-                Redirect Webpage
-            </h3>
+            <h3>Keyboard Key Press Counter</h3>
 
             <p>
-                Redirect the user to another webpage.
+                Count keyboard key presses using JavaScript.
             </p>
 
             <a
-                href="browser-09-redirect.html"
+                href="event-09-key-counter.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -684,20 +647,16 @@ footer strong{
 
             <div class="number">10</div>
 
-            <h3>
-                Current Webpage URL
-            </h3>
+            <h3>Focus and Blur</h3>
 
             <p>
-                Display the current webpage URL.
+                Demonstrate focus and blur events.
             </p>
 
             <a
-                href="browser-10-current-url.html"
+                href="event-10-focus-blur.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -709,20 +668,16 @@ footer strong{
 
             <div class="number">11</div>
 
-            <h3>
-                History Object
-            </h3>
+            <h3>change Event</h3>
 
             <p>
-                Demonstrate the browser History object.
+                Demonstrate the change event.
             </p>
 
             <a
-                href="browser-11-history.html"
+                href="event-11-change.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -734,20 +689,16 @@ footer strong{
 
             <div class="number">12</div>
 
-            <h3>
-                Back Forward Reload
-            </h3>
+            <h3>input Event</h3>
 
             <p>
-                Create browser navigation controls.
+                Demonstrate the input event.
             </p>
 
             <a
-                href="browser-12-history-controls.html"
+                href="event-12-input.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -759,20 +710,16 @@ footer strong{
 
             <div class="number">13</div>
 
-            <h3>
-                Navigator Object
-            </h3>
+            <h3>submit Event</h3>
 
             <p>
-                Demonstrate the JavaScript Navigator object.
+                Demonstrate form submission events.
             </p>
 
             <a
-                href="browser-13-navigator.html"
+                href="event-13-submit.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -784,20 +731,16 @@ footer strong{
 
             <div class="number">14</div>
 
-            <h3>
-                Browser Information
-            </h3>
+            <h3>reset Event</h3>
 
             <p>
-                Display browser information using JavaScript.
+                Demonstrate the form reset event.
             </p>
 
             <a
-                href="browser-14-browser-info.html"
+                href="event-14-reset.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -809,20 +752,16 @@ footer strong{
 
             <div class="number">15</div>
 
-            <h3>
-                Screen Width and Height
-            </h3>
+            <h3>Button Background Change</h3>
 
             <p>
-                Display the user's screen dimensions.
+                Change background color using an event.
             </p>
 
             <a
-                href="browser-15-screen-size.html"
+                href="event-15-bg-button.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -834,20 +773,16 @@ footer strong{
 
             <div class="number">16</div>
 
-            <h3>
-                Online or Offline Detection
-            </h3>
+            <h3>Dynamic Font Size</h3>
 
             <p>
-                Detect whether the browser is online or offline.
+                Change font size dynamically using events.
             </p>
 
             <a
-                href="browser-16-online-offline.html"
+                href="event-16-font-size.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -859,20 +794,16 @@ footer strong{
 
             <div class="number">17</div>
 
-            <h3>
-                Browser Language
-            </h3>
+            <h3>Multiple Buttons and Handlers</h3>
 
             <p>
-                Display the current browser language.
+                Create multiple buttons with event handlers.
             </p>
 
             <a
-                href="browser-17-browser-language.html"
+                href="event-17-multiple-buttons.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -884,20 +815,16 @@ footer strong{
 
             <div class="number">18</div>
 
-            <h3>
-                Browser Geolocation
-            </h3>
+            <h3>addEventListener</h3>
 
             <p>
-                Demonstrate browser geolocation features.
+                Demonstrate addEventListener().
             </p>
 
             <a
-                href="browser-18-geolocation.html"
+                href="event-18-add-event-listener.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -909,20 +836,16 @@ footer strong{
 
             <div class="number">19</div>
 
-            <h3>
-                Geographical Coordinates
-            </h3>
+            <h3>Multiple Event Listeners</h3>
 
             <p>
-                Display geographical coordinates using JavaScript.
+                Add multiple event listeners to an element.
             </p>
 
             <a
-                href="browser-19-coordinates.html"
+                href="event-19-multiple-listeners.html"
                 class="open-btn">
-
                 Open Program →
-
             </a>
 
         </div>
@@ -934,20 +857,226 @@ footer strong{
 
             <div class="number">20</div>
 
-            <h3>
-                Online/Offline Updating Page
-            </h3>
+            <h3>removeEventListener</h3>
 
             <p>
-                Update webpage information when network status changes.
+                Remove an event listener using JavaScript.
             </p>
 
             <a
-                href="browser-20-online-offline-update.html"
+                href="event-20-remove-event-listener.html"
                 class="open-btn">
-
                 Open Program →
+            </a>
 
+        </div>
+
+
+        <!-- 21 -->
+
+        <div class="program-card">
+
+            <div class="number">21</div>
+
+            <h3>Event Bubbling</h3>
+
+            <p>
+                Demonstrate event bubbling.
+            </p>
+
+            <a
+                href="event-21-bubbling.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 22 -->
+
+        <div class="program-card">
+
+            <div class="number">22</div>
+
+            <h3>Event Capturing</h3>
+
+            <p>
+                Demonstrate event capturing.
+            </p>
+
+            <a
+                href="event-22-capturing.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 23 -->
+
+        <div class="program-card">
+
+            <div class="number">23</div>
+
+            <h3>Event Delegation</h3>
+
+            <p>
+                Demonstrate event delegation.
+            </p>
+
+            <a
+                href="event-23-delegation.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 24 -->
+
+        <div class="program-card">
+
+            <div class="number">24</div>
+
+            <h3>Drag and Drop</h3>
+
+            <p>
+                Create a drag-and-drop application.
+            </p>
+
+            <a
+                href="event-24-drag-drop.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 25 -->
+
+        <div class="program-card">
+
+            <div class="number">25</div>
+
+            <h3>Mouse Coordinate Tracker</h3>
+
+            <p>
+                Track the mouse pointer coordinates.
+            </p>
+
+            <a
+                href="event-25-mouse-coordinates.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 26 -->
+
+        <div class="program-card">
+
+            <div class="number">26</div>
+
+            <h3>Keyboard Controlled Moving Object</h3>
+
+            <p>
+                Control an object using keyboard events.
+            </p>
+
+            <a
+                href="event-26-keyboard-moving-object.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 27 -->
+
+        <div class="program-card">
+
+            <div class="number">27</div>
+
+            <h3>Click Counter</h3>
+
+            <p>
+                Count button clicks using JavaScript.
+            </p>
+
+            <a
+                href="event-27-click-counter.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 28 -->
+
+        <div class="program-card">
+
+            <div class="number">28</div>
+
+            <h3>Double Click Counter</h3>
+
+            <p>
+                Count double-click events.
+            </p>
+
+            <a
+                href="event-28-double-click-counter.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 29 -->
+
+        <div class="program-card">
+
+            <div class="number">29</div>
+
+            <h3>Reaction Time Game</h3>
+
+            <p>
+                Create a simple reaction-time game.
+            </p>
+
+            <a
+                href="event-29-reaction-game.html"
+                class="open-btn">
+                Open Program →
+            </a>
+
+        </div>
+
+
+        <!-- 30 -->
+
+        <div class="program-card">
+
+            <div class="number">30</div>
+
+            <h3>Keyboard Typing Test</h3>
+
+            <p>
+                Create a simple keyboard typing test.
+            </p>
+
+            <a
+                href="event-30-typing-test.html"
+                class="open-btn">
+                Open Program →
             </a>
 
         </div>
@@ -969,7 +1098,7 @@ footer strong{
     </p>
 
     <p>
-        Browser Objects • Browser APIs • JavaScript
+        Events • Mouse • Keyboard • Forms • Interaction
     </p>
 
 </footer>
